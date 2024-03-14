@@ -40,4 +40,4 @@ docker-compose up -d
 
 Access the Airflow interface and trigger the data processing DAG.
 
-![alt text](https://github.com/srikardevulapalli/global_football_stadiums_analysis/data/airflow ui.png?raw=true)
+![alt text](https://github.com/srikardevulapalli/global_football_stadiums_analysis/data/airflow_ui.png?raw=true)
