@@ -49,6 +49,7 @@ Access the Airflow interface and trigger the data processing DAG.
 ![alt text](https://github.com/srikardevulapalli/global_football_stadiums_analysis/blob/main/data/airflow_ui.png?raw=true)
 
 There are 3 steps in the Apache Airflow workflow execution as shown here:
+
 ![Screenshot 2024-03-14 at 9 15 10 AM](https://github.com/srikardevulapalli/global_football_stadiums_analysis/assets/111369239/6cf20f02-b8dc-4566-945b-e27f12d67f22)
 
 ***extract_data_from_wikipedia***
