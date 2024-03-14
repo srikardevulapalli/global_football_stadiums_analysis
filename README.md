@@ -58,7 +58,7 @@ This task is responsible for the initial step in the data pipeline. It involves 
 
 ***transform_wikipedia_data***
 
-Following the extraction, the data undergoes a transformation process. This step typically includes cleaning the data (e.g., removing duplicates, handling missing values), normalizing formats (e.g., standardizing date formats, string casing), and structuring the data into a schema that fits the needs of the analysis or database design. Transformation is crucial to ensure data quality and to prepare the data for effective storage and analysis.
+Following the extraction, the data undergoes a transformation process. This step typically includes cleaning the data (e.g., removing duplicates, handling missing values), normalizing formats (e.g., standardizing integer formats, string casing), and structuring the data into a schema that fits the needs of the analysis or database design. Transformation is crucial to ensure data quality and to prepare the data for effective storage and analysis.
 
 ***write_wikipedia_data***
 
