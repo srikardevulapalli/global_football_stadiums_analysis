@@ -26,8 +26,9 @@ Before initiating the project, ensure the following prerequisites are met:
 To get started with the Global Football Stadiums Analysis project:
 
 1. Clone the repository:
-
+'''
 git clone https://github.com/srikardevulapalli/global_football_stadiums_analysis.git
+'''
 
 2. Install the necessary Python packages:
 
