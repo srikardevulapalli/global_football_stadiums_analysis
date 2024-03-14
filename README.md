@@ -32,4 +32,11 @@ git clone https://github.com/srikardevulapalli/global_football_stadiums_analysis
 
 pip install -r requirements.txt
  
+## Docker Deployment
+This project is optimized for Docker, providing a straightforward setup process:
+Initialize the Docker services- 
+
+docker-compose up -d
+
+Access the Airflow interface and trigger the data processing DAG.
 
