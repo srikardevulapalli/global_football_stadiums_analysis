@@ -85,6 +85,10 @@ The Global Football Stadiums Analysis project utilizes a robust data pipeline th
 5. **Visualization and Results:**
    - The results from Synapse analytics can then be visualized to provide a clear and concise representation of the data. While this pipeline does not directly incorporate Tableau, the results can be used in any visualization tool that supports integration with Azure services, including Power BI, to create interactive dashboards and reports.
 
+## Architecture and Workflow
+The data pipeline's structure is crafted to ensure efficient handling of the data engineering lifecycle. For an illustrative summary of the system's architecture, please view this figure:
+![alt text](https://github.com/srikardevulapalli/global_football_stadiums_analysis/blob/main/Webserver.png?raw=True)
+
 ## Results and insights
 ### Results
 In the dataviz.ipynb notebook, we've generated a series of data visualizations using Plotly and Seaborn, which are key in extracting meaningful insights from the Global Football Stadiums Analysis.
@@ -135,7 +139,3 @@ The flattening of the curve as it approaches higher capacities suggests fewer st
 
 The United States leads with the highest number of home teams, which can correlate to a strong domestic league system and a high level of participation in football.
 Other countries like Argentina and Malaysia also feature prominently, highlighting their potential as enthusiastic football nations.
-
-## Architecture and Workflow
-The data pipeline's structure is crafted to ensure efficient handling of the data engineering lifecycle. For an illustrative summary of the system's architecture, please view this figure:
-![alt text](https://github.com/srikardevulapalli/global_football_stadiums_analysis/blob/main/Webserver.png?raw=True)
