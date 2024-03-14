@@ -49,6 +49,7 @@ Access the Airflow interface and trigger the data processing DAG.
 ![alt text](https://github.com/srikardevulapalli/global_football_stadiums_analysis/blob/main/data/airflow_ui.png?raw=true)
 
 There are 3 steps in the Apache Airflow workflow execution as shown here:
+![Screenshot 2024-03-14 at 9 15 10 AM](https://github.com/srikardevulapalli/global_football_stadiums_analysis/assets/111369239/6cf20f02-b8dc-4566-945b-e27f12d67f22)
 
 ***extract_data_from_wikipedia***
 
@@ -105,7 +106,7 @@ While specific details were not extracted, it's evident that a CDF was also part
 The visualizations generated in this notebook offer a comprehensive view of the world's football stadium capacities and their distribution across different regions and countries. The analytical insights from this project can aid stakeholders in making informed decisions about sports infrastructure investments and understanding global football popularity trends.
 
 ### Insights
-** Proportion of Stadiums by Country Pie Chart:
+**Proportion of Stadiums by Country Pie Chart**
 
 The United States holds the largest proportion of stadiums, indicating a substantial investment in sports infrastructure.
 Countries like China and Brazil also have significant shares, reflecting their large populations and cultural emphasis on sports.
@@ -129,7 +130,7 @@ The KDE curve suggests there are outliers with significantly larger capacities, 
 The steep curve at the lower capacity values in the CDF indicates that a large percentage of stadiums have relatively low capacities.
 The flattening of the curve as it approaches higher capacities suggests fewer stadiums exist within these higher capacity ranges.
 
-***Number of Home Teams by Country Bar Chart**
+**Number of Home Teams by Country Bar Chart**
 
 The United States leads with the highest number of home teams, which can correlate to a strong domestic league system and a high level of participation in football.
 Other countries like Argentina and Malaysia also feature prominently, highlighting their potential as enthusiastic football nations.
