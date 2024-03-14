@@ -40,13 +40,28 @@ This project is optimized for Docker, providing a straightforward setup process:
 
 Initialize the Docker services- 
 
+```bash
 docker-compose up -d
+```
 
 Access the Airflow interface and trigger the data processing DAG.
 
 ![alt text](https://github.com/srikardevulapalli/global_football_stadiums_analysis/blob/main/data/airflow_ui.png?raw=true)
 
+There are 3 steps in the Apache Airflow workflow execution as shown here:
 
+***extract_data_from_wikipedia***
+
+This task is responsible for the initial step in the data pipeline. It involves reaching out to Wikipedia and using a web scraping tool, such as Beautiful Soup, to extract raw data about football stadiums. The duration of this step indicates it's a relatively quick process, suggesting an efficient extraction mechanism and likely a direct pull of structured data, such as tables from specific Wikipedia pages.
+
+***transform_wikipedia_data***
+
+Following the extraction, the data undergoes a transformation process. This step typically includes cleaning the data (e.g., removing duplicates, handling missing values), normalizing formats (e.g., standardizing date formats, string casing), and structuring the data into a schema that fits the needs of the analysis or database design. Transformation is crucial to ensure data quality and to prepare the data for effective storage and analysis.
+
+***write_wikipedia_data***
+
+The final step writes the transformed data to a persistent storage solution. Given that the pipeline includes storing data in Azure Data Lake as per the architecture overview, this task likely involves writing data files to the lake using the Azure Blob File System (ABFS) protocol. This ensures the data is saved in a secure, scalable environment and is accessible for further processing, such as analytics in Azure Synapse or other data applications.
+ 
 ## Pipeline Execution
 
 The Global Football Stadiums Analysis project utilizes a robust data pipeline that encompasses several stages from data extraction to analytics. Here is a detailed walkthrough of the pipeline as depicted in `DataflowDiagram.png` within the repository:
@@ -95,7 +110,7 @@ The visualizations generated in this notebook offer a comprehensive view of the 
 The United States holds the largest proportion of stadiums, indicating a substantial investment in sports infrastructure.
 Countries like China and Brazil also have significant shares, reflecting their large populations and cultural emphasis on sports.
 
-** Top 10 Largest Stadiums Bar Chart:
+**Top 10 Largest Stadiums Bar Chart**
 
 The "Spotify Camp Nou" and "Estadio Azteca" are among the largest stadiums, suggesting these locations are prime venues for major events and have high audience capacities.
 There's a diverse representation of countries in the top 10, showing that large-scale stadiums are a global phenomenon.
@@ -104,17 +119,17 @@ Stadium Capacity by Region Bubble Chart:
 Europe and North America boast substantial total stadium capacities, possibly due to their long-standing football traditions and hosting of numerous international events.
 East Asia and South America follow closely, which might be connected to their growing economies and increased focus on global sports presence.
 
-** Stadium Capacity Density Histogram and KDE:
+**Stadium Capacity Density Histogram and KDE**
 
 The distribution of stadium capacities skews heavily towards the lower end, with a peak just above zero, indicating that smaller stadiums are far more common than larger ones.
 The KDE curve suggests there are outliers with significantly larger capacities, which may be the iconic stadiums known for hosting prestigious events.
 
-** Cumulative Distribution Function (CDF) of Stadium Capacity:
+**Cumulative Distribution Function (CDF) of Stadium Capacity**
 
 The steep curve at the lower capacity values in the CDF indicates that a large percentage of stadiums have relatively low capacities.
 The flattening of the curve as it approaches higher capacities suggests fewer stadiums exist within these higher capacity ranges.
 
-** Number of Home Teams by Country Bar Chart:
+***Number of Home Teams by Country Bar Chart**
 
 The United States leads with the highest number of home teams, which can correlate to a strong domestic league system and a high level of participation in football.
 Other countries like Argentina and Malaysia also feature prominently, highlighting their potential as enthusiastic football nations.
