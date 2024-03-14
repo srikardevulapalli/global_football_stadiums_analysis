@@ -89,7 +89,7 @@ The Global Football Stadiums Analysis project utilizes a robust data pipeline th
 The data pipeline's structure is crafted to ensure efficient handling of the data engineering lifecycle. For an illustrative summary of the system's architecture, please view this figure:
 ![alt text](https://github.com/srikardevulapalli/global_football_stadiums_analysis/blob/main/Webserver.png?raw=True)
 
-## Results and insights
+## Results and Insights
 ### Results
 In the dataviz.ipynb notebook, we've generated a series of data visualizations using Plotly and Seaborn, which are key in extracting meaningful insights from the Global Football Stadiums Analysis.
 
