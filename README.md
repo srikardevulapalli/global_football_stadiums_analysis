@@ -32,8 +32,9 @@ git clone https://github.com/srikardevulapalli/global_football_stadiums_analysis
 
 2. Install the necessary Python packages:
 
+ ```bash
 pip install -r requirements.txt
- 
+```
 ## Docker Deployment
 This project is optimized for Docker, providing a straightforward setup process:
 
