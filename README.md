@@ -34,6 +34,7 @@ pip install -r requirements.txt
  
 ## Docker Deployment
 This project is optimized for Docker, providing a straightforward setup process:
+
 Initialize the Docker services- 
 
 docker-compose up -d
@@ -41,3 +42,16 @@ docker-compose up -d
 Access the Airflow interface and trigger the data processing DAG.
 
 ![alt text](https://github.com/srikardevulapalli/global_football_stadiums_analysis/blob/main/data/airflow_ui.png?raw=true)
+
+
+## Pipeline Execution
+The data pipeline executes the following tasks:
+
+- Data is sourced using Python scripts that scrape selected web resources.
+- The raw data undergoes a cleaning phase to rectify inconsistencies and ensure uniformity.
+- Data transformation is performed to shape the data into a format suitable for analysis.
+- The processed data is then dispatched to Azure Data Lake, utilizing secure protocols for optimal storage and retrieval efficiency.
+
+## Architecture and Workflow
+The data pipeline's structure is crafted to ensure efficient handling of the data engineering lifecycle. For an illustrative summary of the system's architecture, please view this figure:
+![alt text](https://github.com/srikardevulapalli/global_football_stadiums_analysis/blob/main/Webserver.png?raw=True)
