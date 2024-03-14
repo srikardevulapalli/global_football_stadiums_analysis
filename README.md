@@ -52,15 +52,15 @@ There are 3 steps in the Apache Airflow workflow execution as shown here:
 
 ![Screenshot 2024-03-14 at 9 15 10 AM](https://github.com/srikardevulapalli/global_football_stadiums_analysis/assets/111369239/6cf20f02-b8dc-4566-945b-e27f12d67f22)
 
-***extract_data_from_wikipedia***
+***Extract***
 
 This task is responsible for the initial step in the data pipeline. It involves reaching out to Wikipedia and using a web scraping tool, such as Beautiful Soup, to extract raw data about football stadiums. The duration of this step indicates it's a relatively quick process, suggesting an efficient extraction mechanism and likely a direct pull of structured data, such as tables from specific Wikipedia pages.
 
-***transform_wikipedia_data***
+***Transform***
 
 Following the extraction, the data undergoes a transformation process. This step typically includes cleaning the data (e.g., removing duplicates, handling missing values), normalizing formats (e.g., standardizing integer formats, string casing), and structuring the data into a schema that fits the needs of the analysis or database design. Transformation is crucial to ensure data quality and to prepare the data for effective storage and analysis.
 
-***write_wikipedia_data***
+***Load***
 
 The final step writes the transformed data to a persistent storage solution. Given that the pipeline includes storing data in Azure Data Lake as per the architecture overview, this task likely involves writing data files to the lake using the Azure Blob File System (ABFS) protocol. This ensures the data is saved in a secure, scalable environment and is accessible for further processing, such as analytics in Azure Synapse or other data applications.
  
