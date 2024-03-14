@@ -111,7 +111,7 @@ def write_wikipedia_data(**kwargs):
 
     # data.to_csv('data/' + file_name, index=False)
     # Replace with your actual storage account details
-    connection_string = "DefaultEndpointsProtocol=https;AccountName=srikardevsa;AccountKey=<youraccountkey>"
+    connection_string = "DefaultEndpointsProtocol=https;AccountName=srikardevsa;AccountKey=<youraccountkey>";EndpointSuffix=core.windows.net"
 
     # Container and blob names
     container_name = "dateng"
