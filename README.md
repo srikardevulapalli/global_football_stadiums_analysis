@@ -45,12 +45,26 @@ Access the Airflow interface and trigger the data processing DAG.
 
 
 ## Pipeline Execution
-The data pipeline executes the following tasks:
 
-- Data is sourced using Python scripts that scrape selected web resources.
-- The raw data undergoes a cleaning phase to rectify inconsistencies and ensure uniformity.
-- Data transformation is performed to shape the data into a format suitable for analysis.
-- The processed data is then dispatched to Azure Data Lake, utilizing secure protocols for optimal storage and retrieval efficiency.
+The Global Football Stadiums Analysis project utilizes a robust data pipeline that encompasses several stages from data extraction to analytics. Here is a detailed walkthrough of the pipeline as depicted in `DataflowDiagram.png` within the repository:
+
+1. **Data Extraction:**
+   - The pipeline begins by sourcing football stadium data from the web, using Beautiful Soup to scrape the necessary information from Wikipedia pages. This step ensures that we have the latest data on stadium capacities, locations, and home teams.
+
+2. **Data Processing with Airflow:**
+   - The extracted data is passed to a PostgreSQL database housed within a Docker container. Apache Airflow manages the data workflow, ensuring that the processes are executed in the correct sequence and monitoring their health.
+   - The Airflow webserver and scheduler oversee the tasks, allowing for both manual and scheduled runs. The robust orchestration ensures that data moves seamlessly from one stage to the next without bottlenecks.
+
+3. **Data Storage in Azure Data Lake:**
+   - Once processed, the data is loaded into Azure Data Lake Storage Gen2, which offers a highly scalable and secure storage solution. Here, the data can be managed using hierarchical namespace features and is ready for analytical processing.
+
+4. **Data Analytics with Azure Synapse:**
+   - The project leverages Azure Data Factory (ADF) to further orchestrate the movement of data from the lake to Azure Synapse Analytics. Synapse provides a powerful and dynamic environment to run complex queries and analytics on the stored data.
+   - Through Synapse, we can perform deep analyses, create comprehensive reports, and generate insights that are translated into actionable results.
+
+5. **Visualization and Results:**
+   - The results from Synapse analytics can then be visualized to provide a clear and concise representation of the data. While this pipeline does not directly incorporate Tableau, the results can be used in any visualization tool that supports integration with Azure services, including Power BI, to create interactive dashboards and reports.
+
 
 ## Architecture and Workflow
 The data pipeline's structure is crafted to ensure efficient handling of the data engineering lifecycle. For an illustrative summary of the system's architecture, please view this figure:
