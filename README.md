@@ -8,7 +8,7 @@ This repository is dedicated to the Global Football Stadiums Analysis project, a
 - Docker Deployment
 - Pipeline Execution
 - Architecture and Workflow
-- Resukts & Insights
+- Results & Insights
 - Acknowledgements
 
 ## Project Overview
