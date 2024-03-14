@@ -157,7 +157,7 @@ The flattening of the curve as it approaches higher capacities suggests fewer st
 The United States leads with the highest number of home teams, which can correlate to a strong domestic league system and a high level of participation in football.
 Other countries like Argentina and Malaysia also feature prominently, highlighting their potential as enthusiastic football nations.
 
-## Acknowledgments
+## Acknowledgements
 
 I would like to express my heartfelt thanks to Nirmal Budhathoki, Rafael Vera-Marañón & Yusuf for his expert guidance, as well as to the wider open-source community for providing the essential tools and libraries that have been instrumental in bringing this project to fruition. 
 The journey has further solidified my conviction in the transformative effects of ongoing education within the realm of data engineering.
