@@ -28,4 +28,7 @@ To get started with the Global Football Stadiums Analysis project:
 ```bash
 git clone https://github.com/srikardevulapalli/global_football_stadiums_analysis.git
 
+2. Install the necessary Python packages:
+pip install -r requirements.txt
+ 
 
