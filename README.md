@@ -113,29 +113,46 @@ The visualizations generated in this notebook offer a comprehensive view of the 
 ### Insights
 **Proportion of Stadiums by Country Pie Chart**
 
+![image](https://github.com/srikardevulapalli/global_football_stadiums_analysis/assets/111369239/40d50e0b-7c47-4998-9ee0-27cee0b0384c)
+
+
 The United States holds the largest proportion of stadiums, indicating a substantial investment in sports infrastructure.
 Countries like China and Brazil also have significant shares, reflecting their large populations and cultural emphasis on sports.
 
 **Top 10 Largest Stadiums Bar Chart**
 
+![image](https://github.com/srikardevulapalli/global_football_stadiums_analysis/assets/111369239/8a5efc07-8955-4793-ad12-1566628db8ed)
+
+
 The "Spotify Camp Nou" and "Estadio Azteca" are among the largest stadiums, suggesting these locations are prime venues for major events and have high audience capacities.
 There's a diverse representation of countries in the top 10, showing that large-scale stadiums are a global phenomenon.
-Stadium Capacity by Region Bubble Chart:
+
+**Stadium Capacity by Region Bubble Chart**
+
+<img width="801" alt="Screenshot 2024-03-14 at 9 28 21 AM" src="https://github.com/srikardevulapalli/global_football_stadiums_analysis/assets/111369239/ae41f841-489d-48a2-a506-6b4d177660ea">
 
 Europe and North America boast substantial total stadium capacities, possibly due to their long-standing football traditions and hosting of numerous international events.
 East Asia and South America follow closely, which might be connected to their growing economies and increased focus on global sports presence.
 
 **Stadium Capacity Density Histogram and KDE**
 
+![image](https://github.com/srikardevulapalli/global_football_stadiums_analysis/assets/111369239/591da01c-aed2-4b17-94df-946fb64d4b09)
+
+
 The distribution of stadium capacities skews heavily towards the lower end, with a peak just above zero, indicating that smaller stadiums are far more common than larger ones.
 The KDE curve suggests there are outliers with significantly larger capacities, which may be the iconic stadiums known for hosting prestigious events.
 
 **Cumulative Distribution Function (CDF) of Stadium Capacity**
 
+![image](https://github.com/srikardevulapalli/global_football_stadiums_analysis/assets/111369239/8d87323a-4e36-4930-87ec-98045c9e6a37)
+
 The steep curve at the lower capacity values in the CDF indicates that a large percentage of stadiums have relatively low capacities.
 The flattening of the curve as it approaches higher capacities suggests fewer stadiums exist within these higher capacity ranges.
 
 **Number of Home Teams by Country Bar Chart**
+
+<img width="782" alt="Screenshot 2024-03-14 at 9 29 26 AM" src="https://github.com/srikardevulapalli/global_football_stadiums_analysis/assets/111369239/c5290afe-293e-45dd-94c9-b76024f5dc37">
+
 
 The United States leads with the highest number of home teams, which can correlate to a strong domestic league system and a high level of participation in football.
 Other countries like Argentina and Malaysia also feature prominently, highlighting their potential as enthusiastic football nations.
