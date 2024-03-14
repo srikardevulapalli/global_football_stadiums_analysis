@@ -26,6 +26,6 @@ To get started with the Global Football Stadiums Analysis project:
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/YourGitHubUsername/GlobalFootballStadiumsAnalysis.git](https://github.com/srikardevulapalli/global_football_stadiums_analysis.git)https://github.com/srikardevulapalli/global_football_stadiums_analysis.git
+git clone https://github.com/srikardevulapalli/global_football_stadiums_analysis.git
 
 
